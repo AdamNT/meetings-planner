@@ -1,0 +1,100 @@
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__group .label.label--left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__group .label .name {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.form__group .label.label--left .name {
+    width: 160px;
+    padding: 0 15px 0 0;
+}
+
+.form__group .label.label--left>* {
+    width: calc(100% - 160px);
+}
+
+.btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px -7px;
+}
+
+.form__group+.btn-wrap {
+    padding-top: 25px;
+}
+
+.btn-wrap .btn {
+    margin: 4px 7px;
+}
+
+input,
+textarea {
+    color: $gray;
+    outline: none;
+    font-size: 14px;
+    line-height: normal;
+
+    border: 1px solid $gray;
+    background: transparent;
+    transition: ease .3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: $white;
+    color: $white;
+    transition: ease .3s;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* INPUTS */
+input {
+    padding: 10px 15px;
+    transition: ease .3s;
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $gray;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $gray;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $gray;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: $gray;
+}
+
+/* TEXTAREA */
+textarea {
+    padding: 10px 12px;
+    min-height: 150px;
+    resize: vertical;
+}
+
+.datepicker-range {
+    margin: -4px -7px;
+}
+
+.datepicker-range .react-datepicker-wrapper {
+    margin: 4px 7px;
+}

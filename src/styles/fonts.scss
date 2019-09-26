@@ -1,0 +1,5 @@
+@include font-face('Open Sans', './fonts/OpenSans/OpenSans-Regular', $regular);
+@include font-face('Open Sans', './fonts/OpenSans/OpenSans-Light', $light);
+@include font-face('Open Sans', './fonts/OpenSans/OpenSans-SemiBold', $semiBold);
+
+$openSans: 'Open Sans', serif;

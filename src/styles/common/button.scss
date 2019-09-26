@@ -1,0 +1,133 @@
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: 5px 12px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: ease .3s;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.btn:hover,
+.btn.is-active {
+    transition: ease .3s;
+}
+
+.btn--small {
+    min-width: 150px;
+}
+
+.btn--gray {
+    background: $grayLight;
+    font-weight: $semiBold;
+}
+
+.btn--gray:hover,
+.btn--gray.is-active {
+    background: $gray;
+}
+
+.btn--gray-dark {
+    background: #343434;
+    font-weight: $semiBold;
+}
+
+.btn--gray-dark:hover,
+.btn--gray-dark.is-active {
+    background: #444;
+}
+
+.btn--orange {
+    color: $black;
+    border-color: $orange;
+    background: $orange;
+    font-weight: $semiBold;
+}
+
+.btn--orange:hover,
+.btn--orange.is-active {
+    background: darken($orange, 10%);
+    border-color: darken($orange, 10%);
+    color: $black;
+}
+
+.btn--red {
+    color: $white;
+    border-color: $totemPoleRed;
+    background: $totemPoleRed;
+    font-weight: $semiBold;
+}
+
+.btn--red:hover,
+.btn--red.is-active {
+    background: darken($totemPoleRed, 10%);
+    border-color: darken($totemPoleRed, 10%);
+    color: $white;
+}
+
+.btn--green-light {
+    color: $white;
+    border-color: $greenLight;
+    background: $greenLight;
+    font-weight: $semiBold;
+}
+
+.btn--green-light:hover,
+.btn--green-light.is-active {
+    background: darken($greenLight, 10%);
+    border-color: darken($greenLight, 10%);
+    color: $white;
+}
+
+.btn--icon-left {
+    position: relative;
+    padding-left: 35px;
+}
+
+.btn--icon-left::before {
+    position: absolute;
+    content: '';
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+
+.btn--only-icon {
+    min-height: 35px;
+    padding: 10px 16px;
+}
+
+.btn--edit::before {
+    background: url('./images/edit.svg') no-repeat;
+    background-size: contain;
+}
+
+.btn--delete::before {
+    background: url('./images/delete.svg') no-repeat;
+    background-size: contain;
+}
+
+.btn--filter::before {
+    background: url('./images/filter.svg') no-repeat;
+    background-size: contain;
+}
+
+.is-filtered::after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    background: $greenLight;
+    border-radius: 50%;
+}
